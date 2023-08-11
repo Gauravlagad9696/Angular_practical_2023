@@ -1,0 +1,35 @@
+<!-- ngFor example -->
+<h1>This is example of:{{title}}</h1>
+
+<p *ngFor="let i of user"> User name is:{{i}} </p>
+
+
+<div style="background-color: rgb(177, 130, 68);">
+
+  <p *ngFor="let item of user_details"> User detial is:{{item.name}}--{{item.address}}--{{item.id}} </p>
+</div>
+
+<!-- ngSwitch example -->
+<h3 >This is example of {{title1}}</h3>
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color: red;">red color</h1>
+  <h1 *ngSwitchCase="'yellow'" style="color: yellow;">red color</h1>
+  <h1 *ngSwitchCase="'pink'" style="color: rgb(170, 44, 65);">red color</h1>
+  <h1 *ngSwitchCase="'golden'" style="color: gold;">red color</h1>
+  <h1 *ngSwitchCase="'orange'" style="color: orchid;">red color</h1>
+  <h1 *ngSwitchDefault>NO color matched</h1>
+</div>
+
+<!-- ngIf example -->
+<h4> This is example of:{{title3}}</h4>
+<p *ngIf="show else elseblock">    <!--  show==="4"   compare string conditions -->
+  this is true condition:
+</p>
+<!-- ng else condition -->
+<ng-template #elseblock>
+<p>else condition</p>
+</ng-template>
+
+<!-- handle event using btn -->
+<button (click)="handleClick()">Click me!</button>
+<p *ngIf="clicked">Button was clicked!</p>

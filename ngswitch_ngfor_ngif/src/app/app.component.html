@@ -1,0 +1,23 @@
+<h1>ngIf Example</h1>
+<div *ngIf="showElement">
+  <p>This element is displayed using ngIf directive.</p>
+
+</div>
+
+<hr>
+
+<h1>ngFor Example</h1>
+<ul style="background-color: blueviolet;">
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<hr>
+
+
+<h1>ngSwitch Example</h1>
+<div style="background-color: brown;" [ngSwitch]="color">
+  <p *ngSwitchCase="'red'">Red is selected</p>
+  <p *ngSwitchCase="'blue'">Blue is selected</p>
+  <p *ngSwitchCase="'green'">Green is selected</p>
+  <p *ngSwitchDefault>No color selected</p>
+</div>

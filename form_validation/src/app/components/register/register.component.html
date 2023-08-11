@@ -1,0 +1,73 @@
+
+<form [formGroup]="registerform" class="border border-dark p-2 rounded-4">
+    <div class="col bg-light mb-3 p-2 text-center">
+        <span class="fs-3">Register</span> <!--  fs= font size   -->
+    </div>
+
+    <div class="row">
+        <div class="col mb-3">
+            <label for="firstname" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="firstname" formControlName="firstname">
+        </div>
+
+        <div class="col mb-3">
+            <label for="lastname" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="lastname" formControlName="lastname">
+        </div>
+    </div>
+
+    <div class="row">
+        .<div class=" col mb-3">
+            <label for="email" class="form-label">Email Address :</label>
+            <input type="email" id="email" formControlName="email">
+            <div class="form-text"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class=" col mb-3">
+            <label for="mobile" class="form-label">Mobile Number :</label>
+            <input type="text" id="mobile" formControlName="mobile">
+            <div class="form-text"></div>
+        </div>
+
+        <div class=" col ps-3">
+            <div class="m-1">Gender:</div>
+
+            <div class="form-check form-check-inline">
+
+                <input type="radio" id="male" formControlName="Gender" class="form-check-input">
+                <label for="male" class="form-check-label">Male</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input type="radio" id="female" formControlName="Gender" class="form-check-input">
+                <label for="female" class="form-check-label">female</label>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="text" class="form-control" id="password" formControlName="password">
+        </div>
+
+        <div class="col mb-3">
+            <label for="repeat_password" class="form-label">Repeat password:</label>
+            <input type="text" class="form-control" id="repeat_password" formControlName="repeatpassword">
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-6 offset-3">
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+        </div>
+    </div>
+
+
+</form>

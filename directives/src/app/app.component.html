@@ -1,0 +1,16 @@
+<!-- componant directives -->
+<h1> This is example of componant directives</h1>
+<p>{{title}}</p>
+
+<button (click)="btnclick()"> click me</button>
+
+<!-- structural directives -->
+<div *ngIf="id===38 else elseblock ">this is ngIf example  {{id}}</div>
+ 
+<ng-template #elseblock>
+<p>this is else block</p>
+</ng-template>
+
+<!-- Attribute directives-->
+<p [ngStyle]="{'color':'red','font-weight':'bold'}">This is ngStyle example</p>
+
